@@ -1,4 +1,4 @@
-// Array
+// Array for characters 
 var characterLength = 8;
 var choice = [];
 
@@ -12,7 +12,7 @@ var special = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "<", ">", "?", 
 var generateBtn = document.querySelector("#generate");
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+  generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input
 function writePassword() {
@@ -26,7 +26,7 @@ function writePassword() {
     passwordText.value ="";
   }
 }
-
+// Add generatePassword function
 function generatePassword() {
   var password = "";
   for(var i = 0; i < characterLength; i++) {
@@ -34,10 +34,9 @@ function generatePassword() {
       password = password + choice[randomCharacter];
   }
     return password;
-  }
+  } 
 // Prompt questions 
 function questionPrompts() {
-  choice = [];
   characterLength = parseInt(prompt("How many character do you want your password to be? (8-128 characters"));
 
   if(isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
@@ -59,6 +58,10 @@ function questionPrompts() {
 
   if (confirm("would you like special letters in your password?")){
       choice = choice.concat(special);
+      console.log(choice);
   }
+
+
+
   return true;
 }
