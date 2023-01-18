@@ -73,32 +73,3 @@ function questionsPrompt() {
   return true;
   };
 }
-
-
-
-
-
-
- 
-
-
-
-
-
-
-// if (confirm("Would you like lowercase letter in your password?")) {
-//     choice = choice.concat(lowerCase);
-// }
-// if (confirm("Would you like uppercase letter in your password?")) {
-//   choice = choice.concat(upperCase);
-// }
-// if (confirm("Would you like numbers in your password?")) {
-//   choice = choice.concat(num);
-// }
-// if (confirm("Would you like special characters in your password?")) {
-//   choice = choice.concat(special);
-// }
-// return true;
-
-
-
